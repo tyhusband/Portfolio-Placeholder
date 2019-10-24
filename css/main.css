@@ -9,7 +9,23 @@
 	padding-left: 20%;
 	padding-top: 30%;
 	max-width: 50%;
+
+	delay: 2s;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 a {
 	color: #fff;
