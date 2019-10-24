@@ -1,0 +1,27 @@
+.bg-black {
+	background-color: #1a1a1a
+}
+
+.text {
+	font-family: 'Cutive Mono', monospace;
+	color: #fff;
+	font-size: 1em;
+	padding-left: 20%;
+	padding-top: 30%;
+	max-width: 50%;
+}
+
+a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+
+::selection {
+  background: #ffff00;
+  color: #1a1a1a;
+}
