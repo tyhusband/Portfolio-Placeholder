@@ -2,6 +2,7 @@
 	background-color: #1a1a1a
 }
 
+@media only screen and (min-width: 600px) {
 .text {
 	font-family: 'Cutive Mono', monospace;
 	color: #fff;
@@ -13,7 +14,25 @@
 	delay: 2s;
 	animation: fadein 2s;
 	-webkit-animation: fadein 2s;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+.text {
+	font-family: 'Cutive Mono', monospace;
+	color: #fff;
+	font-size: 1.2em;
+	padding-left: 10%;
+	padding-top: 30%;
+	max-width: 60%;
+
+	delay: 2s;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+  }
+}
+
+
 
 @keyframes fadein {
     from { opacity: 0; }
