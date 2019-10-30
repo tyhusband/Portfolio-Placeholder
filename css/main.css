@@ -1,11 +1,12 @@
 .bg-black {
 	background-color: #1a1a1a
 }
-
+@media only screen and (min-width: 601px) {
 .text {
 	font-family: 'Cutive Mono', monospace;
 	color: #fff;
 	font-size: 16px;
+	line-height: 1.2em;
 	padding-left: 20%;
 	padding-top: 30%;
 	max-width: 50%;
@@ -13,7 +14,24 @@
 	delay: 2s;
 	animation: fadein 2s;
 	-webkit-animation: fadein 2s;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+.text {
+	font-family: 'Cutive Mono', monospace;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 10%;
+	padding-top: 20%;
+	max-width: 70%;
+
+	delay: 2s;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+  }
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
