@@ -22,9 +22,8 @@
 	font-family: 'Cutive Mono', monospace;
 	color: #fff;
 	font-size: 16px;
-	padding-left: 10%;
-	padding-top: 20%;
-	max-width: 70%;
+	padding-top: 10%;
+	max-width: 80%;
 
 	delay: 2s;
 	animation: fadein 2s;
