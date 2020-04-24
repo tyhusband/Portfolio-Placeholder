@@ -1,15 +1,28 @@
+  
+@font-face { 
+	font-family: 'Lora'; 
+	src: url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); 
+	font-style: normal; 
+	font-weight: 100;
+	webkit-font-smoothing: antialiased;
+}
+
+
 .bg-black {
 	background-color: #1a1a1a
 }
+
+
 @media only screen and (min-width: 601px) {
 .text {
-	font-family: 'Cutive Mono', monospace;
-	color: #fff;
+	font-family: 'Lora', serif;
+	color: #404040;
 	font-size: 16px;
-	line-height: 1.2em;
-	padding-left: 20%;
+	line-height: 1.4em;
+	padding-left: 15%;
 	padding-top: 30%;
-	max-width: 50%;
+	max-width: 30%;
+
 
 	delay: 2s;
 	animation: fadein 2s;
@@ -19,12 +32,13 @@
 
 @media only screen and (max-width: 600px) {
 .text {
-	font-family: 'Cutive Mono', monospace;
-	color: #fff;
+	font-family: 'Lora', serif;
+	color: #404040;
+	line-height: 1.6em;
 	font-size: 16px;
 	padding-top: 20%;
 	padding-left: 10%;
-	max-width: 80%;
+	max-width: 50%;
 
 	delay: 2s;
 	animation: fadein 2s;
@@ -46,12 +60,17 @@
 
 
 a {
-	color: #fff;
+	color: #404040;
 	text-decoration: underline;
 }
 
+a:hover {
+	color: #cccc00;
+	text-decoration: none;
+}
+
 a:visited {
-	color: #fff;
+	color: #404040;
 	text-decoration: underline;
 }
 
