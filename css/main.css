@@ -16,12 +16,12 @@
 	font-family: 'DM Mono', monospace;
 	color: #c6c6c6;
 	font-size: 16px;
+	font-weight: 300;
 	line-height: 1.4em;
 	letter-spacing: .1em;
 	padding-left: 15%;
 	padding-top: 30%;
 	max-width: 50%;
-
 
 	delay: 2s;
 	animation: fadein 2s;
@@ -33,9 +33,10 @@
 .text {
 	font-family: 'DM Mono', monospace;
 	color: #c6c6c6;
+	font-size: 16px;
+	font-weight: 300;
 	line-height: 1.6em;
 	letter-spacing: .1em;
-	font-size: 16px;
 	padding-top: 20%;
 	padding-left: 10%;
 	max-width: 50%;
