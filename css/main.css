@@ -7,20 +7,20 @@
 
 
 .bg-black {
-	background-color: #1a1a1a
+	background-color: #000
 }
 
 
 @media only screen and (min-width: 601px) {
 .text {
 	font-family: 'DM Mono', monospace;
-	color: #c6c6c6;
+	color: #fff;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.4em;
 	letter-spacing: .1em;
 	padding-left: 15%;
-	padding-top: 30%;
+	padding-top: 15%;
 	max-width: 50%;
 
 	delay: 2s;
@@ -32,7 +32,7 @@
 @media only screen and (max-width: 600px) {
 .text {
 	font-family: 'DM Mono', monospace;
-	color: #c6c6c6;
+	color: #fff;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.6em;
@@ -61,7 +61,7 @@
 
 
 a {
-	color: #c6c6c6;
+	color: #fff;
 	text-decoration: underline;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 a:visited {
-	color: #c6c6c6;
+	color: #fff;
 	text-decoration: underline;
 }
 
@@ -83,5 +83,5 @@ a:visited:hover {
 
 ::selection {
   background: #ffff00;
-  color: #1a1a1a;
+  color: #000;
 }
