@@ -1,0 +1,289 @@
+/* Coded by me */
+
+/* General */
+
+body {
+    background-color: #000;
+    text-decoration: none;
+    padding: 0px;
+}
+
+p, h2, a, button {
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-weight: 300;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+
+
+/* Type Sizes */
+
+.f3 {
+    font-size: 24px;
+}
+
+.f2 {
+    font-size: 20px;
+}
+
+.f1 {
+    font-size: 16px;
+}
+
+.f0 {
+    font-size: 14px;
+}
+
+.fn1 {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+/* Margins */
+
+.m_home {
+    margin: 20vh 3vw 0vh;
+}
+
+.m16 {
+    margin: 16px 24px 16px 0px; 
+}
+
+.m10 {
+    margin: 10vh 0vw 5vh;
+}
+
+.m_timeline {
+  margin: 5vh 0vw;
+}
+
+
+
+/* Homepage sections */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 3vw 0vh 3vw;
+}
+
+.home_work_section {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.home_work_image {
+    flex: 33.3%;
+    justify-content: space-around;
+}
+
+#home_center_work {
+    margin: 0 2%;
+}
+
+
+
+
+/* My Work Pages */
+
+
+.workpage {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 3vw;
+}
+
+.work_section {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.project_details {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.project_title {
+    display: flex;
+    width: 100%;
+}
+
+.project_description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+
+
+/* WFH Diary section */
+
+.wfh_diary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wfh_image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  margin-bottom: 5vh;
+  width: 48%;
+  flex-grow;
+}
+
+
+/* Footer Section */
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 0vh 10vh;
+    justify-content: flex-start;
+}
+
+
+/* Homepage Accordion Styling */
+
+hr.divider {
+    border-top:1px solid #fff;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px 16px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+  display: inline-block;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  opacity: 0.8;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: #000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) \02795 */
+  font-size: 24px;
+  color: #fff;
+  float: right;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.active:after {
+  content: "—"; /* Unicode character for "minus" sign (-) \2796 */
+  color: #fff;
+}
+
+.accordionImage {
+  width: 70%;
+}
+
+.accordionDetails {
+  width: 30%;
+  padding-right: 5vw;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: #000;
+        text-decoration: none;
+        padding: 0px;
+        margin: 20vh 5vw 0vh 5vw;
+    }
+
+    .home_work_section {
+        flex-direction: column;
+    }
+
+    #home_center_work {
+        margin: 10% 0;
+    }
+
+    .project_details {
+    display: inline-flex;
+    flex-direction: column;
+    }
+
+    .project_description{
+        margin-top: 0;
+    }
+
+    .accordion {
+      padding: 8px 0px 16px 0;
+    }
+
+    .accordion:after {
+      margin-top: -4px;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      flex-direction: column;
+      gap: 2vh;
+    }
+
+    .accordionImage {
+      width: 100%;
+    }
+
+    .accordionDetails {
+      width: 95%;
+    }
+
+    /* WFH Diary section */
+
+    .wfh_diary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .wfh_image {
+        width: 100%
+    }
+
+}
+
+
+
