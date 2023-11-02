@@ -2,6 +2,64 @@
 
 /* General */
 
+/* Mrs. Husband Typeface*/
+@font-face {
+    font-family: 'mrs_husbandregular';
+    src: url('fonts/mrs_husband-webfont.eot');
+    src: url('fonts/mrs_husband-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mrs_husband-webfont.woff2') format('woff2'),
+         url('fonts/mrs_husband-webfont.woff') format('woff'),
+         url('fonts/mrs_husband-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mrs6 {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 128px;
+color: #000
+}
+
+.mrs5 {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 64px;
+color: #000
+}
+
+.mrs4 {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 32px;
+color: #000
+}
+
+.mrs3 {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 24px;
+color: #000
+}
+
+.mrs2 {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 20px;
+color: #000
+}
+
+.mrs1 {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 16px;
+color: #000;
+}
+
+.mrs_a {
+font-family: 'mrs_husbandregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+text-decoration: underline;
+color: #000;
+}
+
 body {
     background-color: #000;
     text-decoration: none;
@@ -75,7 +133,6 @@ p, h2, a, button {
 .home_work_section {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     width: 100%;
     margin-top: 20vh;
 }
@@ -106,7 +163,14 @@ p, h2, a, button {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
-    margin-top: 15vh;
+    margin-top: 5vh;
+}
+
+.work_section_h {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
 }
 
 .project_details {
@@ -127,6 +191,20 @@ p, h2, a, button {
     flex-direction: column;
     width: 100%;
     margin-top: 2vh;
+}
+
+.notebook {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 3vw;
+    background-color: #fdfdfd;
+    background-size: 34px 34px;
+    background-image:  repeating-linear-gradient(0deg, #dee8f9, #dee8f9 1.7000000000000002px, #fdfdfd 1.7000000000000002px, #fdfdfd);
+}
+
+.two-up {
+    padding-top: 5vh;
+    max-width: 49.5%;
 }
 
 
@@ -219,16 +297,27 @@ hr.divider {
   padding-right: 5vw;
 }
 
+.art_img {
+  float: left;
+  width: 20%;
+  padding:.5%;
+}
 
 
 /* Mobile */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:600px){
     body {
         background-color: #000;
         text-decoration: none;
         padding: 0px;
         margin: 20vh 5vw 0vh 5vw;
+    }
+
+    .art_img {
+      float: left;
+      width: 50%;
+      padding:1%;
     }
 
     .home_work_section {
@@ -284,7 +373,15 @@ hr.divider {
         width: 100%
     }
 
-}
+    .work_section_h {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
 
+    .two-up {
+    max-width: 100%;
+    }
+}
 
 
