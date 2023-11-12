@@ -80,6 +80,14 @@ p, h2, a, button {
 
 /* Type Sizes */
 
+.f5 {
+    font-size: 64px;
+}
+
+.f4 {
+    font-size: 48px;
+}
+
 .f3 {
     font-size: 24px;
 }
@@ -144,6 +152,27 @@ p, h2, a, button {
 
 #home_center_work {
     margin: 0 2%;
+}
+
+.about_me_intro {
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10vh;
+}
+
+
+.about_me_details {
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 64px;
+    margin-top: 10vh;
+}
+
+.about_me_paragraph {
+    display: inline-flex;
+    flex-direction: column;
 }
 
 
@@ -382,6 +411,23 @@ hr.divider {
     .two-up {
     max-width: 100%;
     }
+
+    .about_me_intro {
+    display: inline-flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 10vh;
+}
+
+.about_me_details {
+    display: inline-flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 64px;
+    margin-top: 10vh;
+}
+
+
 }
 
 
